@@ -55,7 +55,7 @@ export default function Navbar() {
             <img
               src="/logo.png"
               alt="PlanterMedia Logo"
-              className="h-14 md:h-14 w-auto object-contain group-hover:scale-[1.03] transition-transform duration-300"
+              className="h-10 md:h-10 w-auto object-contain group-hover:scale-[1.03] transition-transform duration-300"
             />
           </a>
 
