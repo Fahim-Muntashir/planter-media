@@ -89,8 +89,12 @@ export default function VideoShowcase() {
       id="showcase"
       className="relative w-full py-20 md:py-32 bg-dark-bg z-20 overflow-hidden"
     >
+      {/* Hidden anchor so #work nav link also scrolls here */}
+      <span id="work" className="absolute -top-20" aria-hidden="true" />
+
       {/* Self-contained styling for the infinite marquee animation */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes marquee-scroll {
           0% { transform: translate3d(0, 0, 0); }
           100% { transform: translate3d(-50%, 0, 0); }
@@ -107,27 +111,27 @@ export default function VideoShowcase() {
       </div>
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 w-full flex flex-col gap-12 md:gap-16 items-center text-center relative z-10">
-        
+
         {/* Top Header Text Content */}
         <div className="flex flex-col items-center gap-4 max-w-2xl">
           <div className="inline-flex items-center gap-2 text-accent-light text-sm font-semibold tracking-wider uppercase">
             <Monitor className="w-4 h-4" />
-            <span>Interactive Showcase</span>
+            <span>Featured Work &amp; Showcase</span>
           </div>
           <h2 className="font-display font-extrabold text-3xl md:text-5xl text-white tracking-tight leading-tight drop-shadow-2xl">
-            Explore our <span className="text-gradient">3D Shorts Wall</span>
+            Our Work, In <span className="text-gradient">Short-Form</span>
           </h2>
           <p className="text-white/60 text-sm md:text-base">
-            Hover over any smartphone screen to pause and focus, and click to view the content format.
+            Hover over any card to pause and focus. Click to play the full short and see the quality of our production.
           </p>
         </div>
 
         {/* Marquee Track Container with horizontal fading masks */}
-        <div 
+        <div
           className="w-full overflow-hidden py-4 select-none relative z-10 [mask-image:linear-gradient(to_right,transparent,white_15%,white_85%,transparent)]"
           style={{ perspective: "1500px" }}
         >
-          <div 
+          <div
             className="flex gap-6 md:gap-10 w-max animate-marquee-scroll hover:[animation-play-state:paused] py-6 px-4"
             style={{ transformStyle: "preserve-3d" }}
           >
@@ -195,9 +199,9 @@ export default function VideoShowcase() {
 
                     {/* Meta info at the bottom */}
                     <div className="absolute bottom-4 inset-x-3 md:inset-x-4 z-15 text-left space-y-1 select-none pointer-events-none">
-                      <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-accent/95 text-[9px] md:text-xs font-semibold text-white tracking-wide uppercase">
+                      {/* <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-md bg-accent/95 text-[9px] md:text-xs font-semibold text-white tracking-wide uppercase">
                         🔥 {short.views}
-                      </span>
+                      </span> */}
                       <h4 className="font-display font-bold text-xs md:text-sm text-white line-clamp-2 leading-tight">
                         {short.title}
                       </h4>

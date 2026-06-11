@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/sections/Hero";
 import Logos from "@/sections/Logos";
-import FeaturedWork from "@/sections/FeaturedWork";
+// import FeaturedWork from "@/sections/FeaturedWork"; // merged into VideoShowcase
 import VideoShowcase from "@/sections/VideoShowcase";
 import Services from "@/sections/Services";
 import Process from "@/sections/Process";
@@ -20,7 +20,7 @@ export default function Home() {
       <main className="flex-1 flex flex-col w-full">
         <Hero />
         <Logos />
-        <FeaturedWork />
+        {/* <FeaturedWork /> */}
         <VideoShowcase />
         <Services />
         <Process />
@@ -31,7 +31,7 @@ export default function Home() {
         <CTA />
       </main>
       <Footer />
-      
+
       {/* Global Video Modal overlays */}
       <VideoModal />
     </>

@@ -49,7 +49,7 @@ export default function Hero() {
 
       {/* All text content — z-20 */}
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center z-20 pointer-events-none">
-        
+
         {/* Left Side Content */}
         <motion.div
           variants={containerVariants}
@@ -120,7 +120,7 @@ export default function Hero() {
               🚀
             </div>
             <div>
-              <p className="text-xs text-white/50 font-medium">Views Generated</p>
+              <p className="text-xs text-white/50 font-medium">Views </p>
               <h4 className="font-display font-bold text-xl text-white">50 Million +</h4>
             </div>
           </motion.div>
