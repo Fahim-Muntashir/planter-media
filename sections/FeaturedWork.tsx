@@ -12,8 +12,8 @@ const PROJECTS: Project[] = [
     views: "1.8M",
     platform: "YouTube",
     industry: "Tech / SaaS",
-    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ",
-    thumbnailUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop",
+    videoUrl: "https://www.youtube.com/embed/3ma4Veho7qA",
+    thumbnailUrl: "https://img.youtube.com/vi/3ma4Veho7qA/maxresdefault.jpg",
   },
   {
     id: "p2",
@@ -90,7 +90,7 @@ export default function FeaturedWork() {
   return (
     <section id="work" className="relative w-full py-24 bg-dark-bg overflow-hidden z-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col gap-12">
-        
+
         {/* Header Block */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="space-y-4">

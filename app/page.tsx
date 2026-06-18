@@ -8,6 +8,7 @@ import Process from "@/sections/Process";
 import Results from "@/sections/Results";
 import Testimonials from "@/sections/Testimonials";
 import WhyUs from "@/sections/WhyUs";
+import Team from "@/sections/Team";
 import FAQ from "@/sections/FAQ";
 import CTA from "@/sections/CTA";
 import Footer from "@/sections/Footer";
@@ -25,6 +26,7 @@ export default function Home() {
         <Services />
         <Process />
         <Results />
+        <Team />
         <Testimonials />
         <WhyUs />
         <FAQ />

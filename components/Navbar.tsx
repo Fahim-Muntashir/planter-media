@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { name: "Showcase", href: "#showcase" },
   { name: "Process", href: "#process" },
   { name: "Bento", href: "#why-us" },
+  { name: "Team", href: "#team" },
   { name: "FAQ", href: "#faq" },
 ];
 
